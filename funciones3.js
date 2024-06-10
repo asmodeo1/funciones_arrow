@@ -48,7 +48,7 @@ function ordenarPorPrioridad() {
     });
 }
 function ordenarPorNombre() {
-    tareas.sort((tarea1, tarea2) => tarea1.nombre > tarea2.nombre);
+    tareas.sort((tarea1, tarea2) => tarea1.nombre > tarea2.nombre ? 1: 0);
     const ul = document.getElementById("tareas");
     ul.textContent = "";
 
